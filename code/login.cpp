@@ -5,81 +5,79 @@ using namespace std;
 
 class user_info {
 public:
-    char user_name[5]; //ÀÌ¸§
-    string user_id; //¾ÆÀÌµğ
+    char user_name[10]; //ì´ë¦„
+    string user_id; //ì•„ì´ë””
     string user_pw;
 };
 
 class admin_info {
 public:
-    char admin_name[5]; //ÀÌ¸§
-    string admin_id; //¾ÆÀÌµğ
+    char admin_name[10]; //ì´ë¦„
+    string admin_id; //ì•„ì´ë””
     string admin_pw;
 };
 
 
 
 int main() {
-    //ÀÓ½Ã °èÁ¤
+    //ì„ì‹œ ê³„ì •
     user_info test_user_1;
-    strcpy(test_user_1.user_name, "Å×½ºÆ®_Á¤ÁØ¿µ");
+    strcpy(test_user_1.user_name, "í…ŒìŠ¤íŠ¸_ì •ì¤€ì˜");
     test_user_1.user_id = "junyoung";
     test_user_1.user_pw = "1q2w3e4r!";
 
     admin_info test_admin1;
-    strcpy(test_admin1.admin_name, "Å×½ºÆ®_°ü¸®ÀÚ1");
+    strcpy(test_admin1.admin_name, "í…ŒìŠ¤íŠ¸_ê´€ë¦¬ì1");
     test_admin1.admin_id = "admin";
     test_admin1.admin_pw = "1q2w3e4r!";
 
-    //·Î±×ÀÎ »óÅÂ
+    //ë¡œê·¸ì¸ ìƒíƒœ
     char login_state = '0';
 
-    cout << "CS Á¦ÀÏ ÀºÇà¿¡ ¿À½Å°É È¯¿µÇÕ´Ï´Ù!\n·Î±×ÀÎ\n";
-    //·Î±×ÀÎ½Ã ÀÔ·Â ¹Ş´Â id¿Í pw
+    cout << "CS ì œì¼ ì€í–‰ì— ì˜¤ì‹ ê±¸ í™˜ì˜í•©ë‹ˆë‹¤!\në¡œê·¸ì¸\n";
+    //ë¡œê·¸ì¸ì‹œ ì…ë ¥ ë°›ëŠ” idì™€ pw
     string input_id;
     string input_pw;
-    //·Î±×ÀÎ ¿¡·¯
+    //ë¡œê·¸ì¸ ì—ëŸ¬
     int login_error = 0;
     while (1) {
-        //id ÀÔ·Â
-        cout << "¾ÆÀÌµğ¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä.\n";
+        //id ì…ë ¥
+        cout << "ì•„ì´ë””ë¥¼ ì…ë ¥í•´ì£¼ì„¸ìš”.\n";
         cin >> input_id;
-        //pw ÀÔ·Â
-        cout << "ºñ¹Ğ¹øÈ£¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä.\n";
+        //pw ì…ë ¥
+        cout << "ë¹„ë°€ë²ˆí˜¸ë¥¼ ì…ë ¥í•´ì£¼ì„¸ìš”.\n";
         cin >> input_pw;
-        //·Î±×ÀÎ Á¤º¸ È®ÀÎ
+        //ë¡œê·¸ì¸ ì •ë³´ í™•ì¸
         if ((input_id == test_user_1.user_id) && (input_pw == test_user_1.user_pw)) {
-            cout << "Á¤ÁØ¿µ´Ô È¯¿µÇÕ´Ï´Ù!\n";
+            cout << "ì •ì¤€ì˜ë‹˜ í™˜ì˜í•©ë‹ˆë‹¤!\n";
             login_state = 'J';
             break;
         }
         else if ((input_id == test_admin1.admin_id) && (input_pw == test_admin1.admin_pw)) {
-            cout << "°ü¸®ÀÚ´Ô È¯¿µÇÕ´Ï´Ù.\n";
+            cout << "ê´€ë¦¬ìë‹˜ í™˜ì˜í•©ë‹ˆë‹¤.\n";
             login_state = 'A';
             break;
         }
         else {
-            cout << "¾ÆÀÌµğ È¤Àº ºñ¹Ğ¹øÈ£°¡ ÀÏÄ¡ÇÏÁö ¾Ê½À´Ï´Ù.\n";
+            cout << "ì•„ì´ë”” í˜¹ì€ ë¹„ë°€ë²ˆí˜¸ê°€ ì¼ì¹˜í•˜ì§€ ì•ŠìŠµë‹ˆë‹¤.\n";
             login_error += 1;
         }
 
         if (login_error == 5) {
-            cout << "·Î±×ÀÎ 5È¸ ½ÇÆĞ·Î ÀÎÇØ ÇÁ·Î±×·¥ÀÌ Á¾·áµË´Ï´Ù.";
+            cout << "ë¡œê·¸ì¸ 5íšŒ ì‹¤íŒ¨ë¡œ ì¸í•´ í”„ë¡œê·¸ë¨ì´ ì¢…ë£Œë©ë‹ˆë‹¤.";
             return 0;
         }
     }
-    cout << "ÀÌ ³»¿ëÀÌ Ãâ·ÂµÈ´Ù¸é, Á¤»ó ·Î±×ÀÎ µÈ°ÍÀÓ. \n";
+    cout << "ì´ ë‚´ìš©ì´ ì¶œë ¥ëœë‹¤ë©´, ì •ìƒ ë¡œê·¸ì¸ ëœê²ƒì„. \n";
     if (login_state == 0) {
-        cout << "·Î±×ÀÎÀÌ Á¤»óÀûÀ¸·Î ½ÇÇàµÇÁö¾Ê°í ³Ñ¾î¿È";
+        cout << "ë¡œê·¸ì¸ì´ ì •ìƒì ìœ¼ë¡œ ì‹¤í–‰ë˜ì§€ì•Šê³  ë„˜ì–´ì˜´";
     }
     if (login_state == 'J') {
-        cout << "Á¤ÁØ¿µ °èÁ¤À¸·Î Á¤»ó ·Î±×ÀÎµÊ";
+        cout << "ì •ì¤€ì˜ ê³„ì •ìœ¼ë¡œ ì •ìƒ ë¡œê·¸ì¸ë¨";
     }
     if (login_state == 'A') {
-        cout << "Å×½ºÆ®_°ü¸®ÀÚ1 °èÁ¤À¸·Î Á¤»ó ·Î±×ÀÎµÊ";
+        cout << "í…ŒìŠ¤íŠ¸_ê´€ë¦¬ì1 ê³„ì •ìœ¼ë¡œ ì •ìƒ ë¡œê·¸ì¸ë¨";
     }
-
-
 
 
 }
