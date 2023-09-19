@@ -7,7 +7,7 @@ const int NAME_LEN = 20;
 
 int accoutID; // 임시로 전역함수
 
-void SC_bankMenu() //메뉴 인터페이스 함수
+void SC_bankMenu() //메뉴 인터페이스 함수 
 {
     cout << "-----Menu-----" << endl;
     cout << "1. 계좌개설" << endl;
