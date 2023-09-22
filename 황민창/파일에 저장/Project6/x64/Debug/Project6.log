@@ -1,0 +1,90 @@
+﻿  proto.cpp
+C:\Users\hwmic\source\repos\Project6\Project6\proto.cpp(9,15): error C2665: 'std::basic_ofstream<char,std::char_traits<char>>::basic_ofstream': 모든 인수 형식을 변환할 수 있는 오버로드된 함수가 없습니다.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\fstream(257,5): message : 'std::basic_ofstream<char,std::char_traits<char>>::basic_ofstream(FILE *)'일 수 있습니다.
+C:\Users\hwmic\source\repos\Project6\Project6\proto.cpp(9,15): message : 'std::basic_ofstream<char,std::char_traits<char>>::basic_ofstream(FILE *)': 인수 1을(를) 'char'에서 'FILE *'(으)로 변환할 수 없습니다.
+C:\Users\hwmic\source\repos\Project6\Project6\proto.cpp(9,16): message : 정수 계열 형식에서 포인터 형식으로 변환하려면 reinterpret_cast, C 스타일 캐스트 또는 괄호가 있는 함수 스타일 캐스트가 필요합니다.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\fstream(237,5): message : 또는       'std::basic_ofstream<char,std::char_traits<char>>::basic_ofstream(const std::wstring &,std::ios_base::openmode,int)'
+C:\Users\hwmic\source\repos\Project6\Project6\proto.cpp(9,15): message : 'std::basic_ofstream<char,std::char_traits<char>>::basic_ofstream(const std::wstring &,std::ios_base::openmode,int)': 인수 1을(를) 'char'에서 'const std::wstring &'(으)로 변환할 수 없습니다.
+C:\Users\hwmic\source\repos\Project6\Project6\proto.cpp(9,16): message : 원인: 'char'에서 'const std::wstring'(으)로 변환할 수 없습니다.
+C:\Users\hwmic\source\repos\Project6\Project6\proto.cpp(9,16): message : 'std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>::basic_string': 모든 인수 형식을 변환할 수 있는 오버로드된 함수가 없습니다.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\xstring(2539,5): message : 'std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>::basic_string(const _Elem *const )'일 수 있습니다.
+          with
+          [
+              _Elem=wchar_t
+          ]
+C:\Users\hwmic\source\repos\Project6\Project6\proto.cpp(9,16): message : 'std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>::basic_string(const _Elem *const )': 인수 1을(를) 'char'에서 'const _Elem *const '(으)로 변환할 수 없습니다.
+          with
+          [
+              _Elem=wchar_t
+          ]
+C:\Users\hwmic\source\repos\Project6\Project6\proto.cpp(9,16): message : 정수 계열 형식에서 포인터 형식으로 변환하려면 reinterpret_cast, C 스타일 캐스트 또는 괄호가 있는 함수 스타일 캐스트가 필요합니다.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\xstring(3072,5): message : 또는       'std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>::basic_string(std::initializer_list<_Elem>,const _Alloc &)'
+          with
+          [
+              _Elem=wchar_t,
+              _Alloc=std::allocator<wchar_t>
+          ]
+C:\Users\hwmic\source\repos\Project6\Project6\proto.cpp(9,16): message : 'std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>::basic_string(std::initializer_list<_Elem>,const _Alloc &)': 인수 1을(를) 'char'에서 'std::initializer_list<_Elem>'(으)로 변환할 수 없습니다.
+          with
+          [
+              _Elem=wchar_t,
+              _Alloc=std::allocator<wchar_t>
+          ]
+          and
+          [
+              _Elem=wchar_t
+          ]
+C:\Users\hwmic\source\repos\Project6\Project6\proto.cpp(9,16): message : 변환하려면 둘째 사용자 정의 변환 연산자 또는 생성자가 있어야 합니다.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\xstring(2569,5): message : 또는       'std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>::basic_string(_Iter,_Iter,const _Alloc &)'
+          with
+          [
+              _Alloc=std::allocator<wchar_t>
+          ]
+C:\Users\hwmic\source\repos\Project6\Project6\proto.cpp(9,16): message : 인수 목록 '(char)'을(를) 일치시키는 동안
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\fstream(228,5): message : 또는       'std::basic_ofstream<char,std::char_traits<char>>::basic_ofstream(const wchar_t *,std::ios_base::openmode,int)'
+C:\Users\hwmic\source\repos\Project6\Project6\proto.cpp(9,15): message : 'std::basic_ofstream<char,std::char_traits<char>>::basic_ofstream(const wchar_t *,std::ios_base::openmode,int)': 인수 1을(를) 'char'에서 'const wchar_t *'(으)로 변환할 수 없습니다.
+C:\Users\hwmic\source\repos\Project6\Project6\proto.cpp(9,16): message : 정수 계열 형식에서 포인터 형식으로 변환하려면 reinterpret_cast, C 스타일 캐스트 또는 괄호가 있는 함수 스타일 캐스트가 필요합니다.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\fstream(224,5): message : 또는       'std::basic_ofstream<char,std::char_traits<char>>::basic_ofstream(const std::string &,std::ios_base::openmode,int)'
+C:\Users\hwmic\source\repos\Project6\Project6\proto.cpp(9,15): message : 'std::basic_ofstream<char,std::char_traits<char>>::basic_ofstream(const std::string &,std::ios_base::openmode,int)': 인수 1을(를) 'char'에서 'const std::string &'(으)로 변환할 수 없습니다.
+C:\Users\hwmic\source\repos\Project6\Project6\proto.cpp(9,16): message : 원인: 'char'에서 'const std::string'(으)로 변환할 수 없습니다.
+C:\Users\hwmic\source\repos\Project6\Project6\proto.cpp(9,16): message : 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>::basic_string': 모든 인수 형식을 변환할 수 있는 오버로드된 함수가 없습니다.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\xstring(2539,5): message : 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>::basic_string(const _Elem *const )'일 수 있습니다.
+          with
+          [
+              _Elem=char
+          ]
+C:\Users\hwmic\source\repos\Project6\Project6\proto.cpp(9,16): message : 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>::basic_string(const _Elem *const )': 인수 1을(를) 'char'에서 'const _Elem *const '(으)로 변환할 수 없습니다.
+          with
+          [
+              _Elem=char
+          ]
+C:\Users\hwmic\source\repos\Project6\Project6\proto.cpp(9,16): message : 정수 계열 형식에서 포인터 형식으로 변환하려면 reinterpret_cast, C 스타일 캐스트 또는 괄호가 있는 함수 스타일 캐스트가 필요합니다.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\xstring(3072,5): message : 또는       'std::basic_string<char,std::char_traits<char>,std::allocator<char>>::basic_string(std::initializer_list<_Elem>,const _Alloc &)'
+          with
+          [
+              _Elem=char,
+              _Alloc=std::allocator<char>
+          ]
+C:\Users\hwmic\source\repos\Project6\Project6\proto.cpp(9,16): message : 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>::basic_string(std::initializer_list<_Elem>,const _Alloc &)': 인수 1을(를) 'char'에서 'std::initializer_list<_Elem>'(으)로 변환할 수 없습니다.
+          with
+          [
+              _Elem=char,
+              _Alloc=std::allocator<char>
+          ]
+          and
+          [
+              _Elem=char
+          ]
+C:\Users\hwmic\source\repos\Project6\Project6\proto.cpp(9,16): message : 변환하려면 둘째 사용자 정의 변환 연산자 또는 생성자가 있어야 합니다.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\xstring(2569,5): message : 또는       'std::basic_string<char,std::char_traits<char>,std::allocator<char>>::basic_string(_Iter,_Iter,const _Alloc &)'
+          with
+          [
+              _Alloc=std::allocator<char>
+          ]
+C:\Users\hwmic\source\repos\Project6\Project6\proto.cpp(9,16): message : 인수 목록 '(char)'을(를) 일치시키는 동안
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\fstream(216,5): message : 또는       'std::basic_ofstream<char,std::char_traits<char>>::basic_ofstream(const char *,std::ios_base::openmode,int)'
+C:\Users\hwmic\source\repos\Project6\Project6\proto.cpp(9,15): message : 'std::basic_ofstream<char,std::char_traits<char>>::basic_ofstream(const char *,std::ios_base::openmode,int)': 인수 1을(를) 'char'에서 'const char *'(으)로 변환할 수 없습니다.
+C:\Users\hwmic\source\repos\Project6\Project6\proto.cpp(9,16): message : 정수 계열 형식에서 포인터 형식으로 변환하려면 reinterpret_cast, C 스타일 캐스트 또는 괄호가 있는 함수 스타일 캐스트가 필요합니다.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\fstream(242,5): message : 또는       'std::basic_ofstream<char,std::char_traits<char>>::basic_ofstream(const _Ty &,std::ios_base::openmode,int)'
+C:\Users\hwmic\source\repos\Project6\Project6\proto.cpp(9,15): message : 'std::basic_ofstream<char,std::char_traits<char>>::basic_ofstream(const _Ty &,std::ios_base::openmode,int)': '__formal'의 템플릿 인수를 추론할 수 없습니다.
+C:\Users\hwmic\source\repos\Project6\Project6\proto.cpp(9,15): message : 인수 목록 '(char)'을(를) 일치시키는 동안
