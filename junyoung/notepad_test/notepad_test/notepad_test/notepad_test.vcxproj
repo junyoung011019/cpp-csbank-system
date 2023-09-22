@@ -21,7 +21,7 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{4752255a-7b1a-4779-9258-ab3d6e0769cd}</ProjectGuid>
+    <ProjectGuid>{9fca6fec-ebb9-4688-aef4-1f7a0a1c4ffa}</ProjectGuid>
     <RootNamespace>notepadtest</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
@@ -127,7 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="notepad.cpp" />
+    <ClCompile Include="notepad_test.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
