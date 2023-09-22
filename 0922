@@ -1,0 +1,33 @@
+#include <iostream>
+#include <string>
+#include <vector>
+
+
+struct UserInfo {
+    std::string IdNumber;
+    std::string name;
+    int age;
+};
+std::vector<UserInfo> userDatabase;
+
+int main() {
+   
+    UserInfo user;
+    std::cout << "이름:";
+    std::cin >> user.name;
+    std::cout << "주민번호:";
+    std::cin >> user.IdNumber;
+    std::cout << "나이:";
+    std::cin >> user.age;
+    
+
+   
+    userDatabase.push_back(user);
+
+    std::cout << "이름: " << userDatabase[0].name << std::endl;
+    std::cout << "주민등록번호: " << userDatabase[0].IdNumber << std::endl;
+    std::cout << "나이: " << userDatabase[0].age << std::endl;
+
+    return 0;
+    
+}
