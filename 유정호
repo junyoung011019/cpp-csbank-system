@@ -1,1 +1,76 @@
+#include <iostream>
+#include <string>
+#include <vector>
 
+
+// 사용자 정보를 저장할 구조체
+struct UserInfo {
+    std::string id;
+    std::string name;
+    int age;
+    int ex;
+    int account=0;
+};
+
+// 사용자 정보를 저장할 벡터
+std::vector<UserInfo> userDatabase;
+
+int main() {
+    int a;
+    // 사용자 정보 입력
+    UserInfo user;
+    std::cout << "주민등록번호: ";
+    std::cin >> user.id;
+    std::cout << "이름: ";
+    std::cin >> user.name;
+    std::cout << "나이: ";
+    std::cin >> user.age;
+    /*user.ex = user.id + time(NULL) /*교수님이 말씀하신 암호*/
+    std::cout << "얼마를 충전하시겠습니까?: ";
+    std::cin >> user.account;
+
+    // 사용자 정보를 데이터베이스에 추가
+    userDatabase.push_back(user);
+
+    // 사용자 정보 출력
+    
+    std::cout << "주민등록번호: " << userDatabase[0].id << std::endl;
+    std::cout << "이름: " << userDatabase[0].name << std::endl;
+    std::cout << "나이: " << userDatabase[0].age << std::endl;
+
+    while ()
+    {
+        std::cout << "계좌 잔고를 확인하실경우 1번 \n";
+        std::cout << "계좌 입금시 2번 \n";
+        std::cout << "계좌 출금시 3번 \n";
+        std::cin >> a;
+        if (a==1)
+        {
+            std::cout << user.account;
+        }
+        else if (a == 2)
+        {
+            std::cin >> a;
+            user.account += a;
+            std::cout << "현재 잔고의 금액은" user.account"입니다";
+        }
+        else if (a == 3)
+        {
+            std::cin >> a;
+            if (a > user.account)
+            {
+                std::cout << "잔고의 금액이 부족합니다.";
+            }
+            else
+            {
+                user.account -= a;
+                std::cout << "현재 잔고의 금액은" user.account"입니다";
+            }
+        }
+        else
+        {
+            std::cout << "다시 입력하세요";
+        }
+    }
+    return 0;
+}
