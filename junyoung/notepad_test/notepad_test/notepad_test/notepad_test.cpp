@@ -12,7 +12,6 @@ struct UserInfo {
 
 UserInfo signup_function() {
     UserInfo user;
-
     cout << "이름 입력>>";
     cin >> user.name;
     cout << "id 입력>>";
@@ -43,8 +42,9 @@ void file_output() {
     }
    
     for (int i = 1; i < 100; i++) {
-        cout << number[i-1] << " ";
+        cout << number[i-1] << number[i]<< number[i +1]<<"\n";
     }
+
     cout << "\n";
 }
 
