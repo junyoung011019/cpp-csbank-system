@@ -26,7 +26,7 @@
 
 <br>
 
-## 1. **🛠️** 개발 환경
+## 1. 🛠️ 개발 환경
 
 - IDE: Visual Studio Community 2022
 - 개발 언어: C++
