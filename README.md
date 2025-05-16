@@ -1,6 +1,6 @@
 # [🏦 CS 제일은행] C++ 기반 MySQL 연동 모의 은행 시스템
 
-![](https://user-images.githubusercontent.com/112460466/210706312-6a44b60d-a42e-4210-b334-9e5983f70fb3.png)
+![상단 배너](./assets/thumbnail.png)
 
 <br>
 
@@ -14,15 +14,14 @@
 
 ## 목차
 
-1. [개발 환경](#1-개발-환경)
-2. [사용 기술 스택](#2-사용-기술-스택)
-3. [프로젝트 구조](#3-프로젝트-구조)
-4. [역할 분담](#4-역할-분담)
-5. [개발 기간 및 작업 관리](#5-개발-기간-및-작업-관리)
-6. [개발 중점 사항](#6-개발-중점-사항)
-7. [기능 시연](#7-기능-시연)
-8. [추후 고려 사항](#8-추후-고려-사항)
-9. [프로젝트 회고](#9-프로젝트-회고)
+1. [개발 환경](#1-🛠️-개발-환경)
+2. [사용 기술 스택](#2-🔌-사용-기술-스택)
+3. [프로젝트 구조](#3-🗂️-프로젝트-구조)
+4. [개발 기간 및 작업 관리](#4-📆-개발-기간-및-작업-관리)
+5. [개발 중점 사항](#5-🎯-개발-중점-사항)
+6. [기능 시연](#6-▶️-기능-시연)
+7. [추후 고려 사항](#7-📌-추후-고려-사항)
+8. [프로젝트 회고](#8-🤔-프로젝트-회고)
 
 <br>
 
@@ -69,106 +68,26 @@
 
 - DB 설계
     - 회원 테이블과 계좌 테이블을 설계하여 구조화된 데이터 관리
-    - 회원의 고유한 ID를 **기본키(Primary Key)**로 설정하여 식별 및 관계 구성
+    - 회원의 고유한 ID를 **기본키(Primary Key)** 로 설정하여 식별 및 관계 구성
 
 <br>
 
-## 3. 🗂️ 프로젝트 구조
+## 3. 🗂️ 프로젝트 구조
 
 ```
 ├── README.md
-├── .eslintrc.js
-├── .gitignore
-├── .prettierrc.json
-├── package-lock.json
-├── package.json
+├── final
+│   └── main.cpp -> 실제 작성 코드
+│   └── libmysql.dll -> DB 연동 파일
+│   └── final.sln
 │
-├── public
-│    └── index.html
-└── src
-     ├── App.jsx
-     ├── index.jsx
-     ├── api
-     │     └── mandarinAPI.js
-     ├── asset
-     │     ├── fonts
-     │     ├── css_sprites.png
-     │     ├── logo-404.svg
-     │     └── logo-home.svg
-     │          .
-     │          .
-     │          .
-     ├── atoms
-     │     ├── LoginData.js
-     │     └── LoginState.js
-     ├── common
-     │     ├── alert
-     │     │     ├── Alert.jsx
-     │     │     └── Alert.Style.jsx
-     │     ├── button
-     │     ├── comment
-     │     ├── inputBox
-     │     ├── post
-     │     ├── postModal
-     │     ├── product
-     │     ├── tabMenu
-     │     ├── topBanner
-     │     └── userBanner
-     ├── pages
-     │     ├── addProduct
-     │     │     ├── AddProduct.jsx
-     │     │     └── AddProduct.Style.jsx
-     │     ├── chatList
-     │     ├── chatRoom
-     │     ├── emailLogin
-     │     ├── followerList
-     │     ├── followingList
-     │     ├── home
-     │     ├── join
-     │     ├── page404
-     │     ├── postDetail
-     │     ├── postEdit
-     │     ├── postUpload
-     │     ├── productEdit
-     │     ├── profile
-     │     ├── profileEdit
-     │     ├── profileSetting
-     │     ├── search
-     │     ├── snsLogin
-     │     └── splash
-     ├── routes
-     │     ├── privateRoutes.jsx
-     │     └── privateRoutesRev.jsx
-     └── styles
-           └── Globalstyled.jsx
-
+└── asset
+    └── 리드미에 사용되는 이미지
 ```
 
 <br>
 
-## 4. 👥 역할 분담
-
-### 🍊정준영
-
-- **UI**
-    - 페이지 : 홈, 검색, 게시글 작성, 게시글 수정, 게시글 상세, 채팅방
-    - 공통 컴포넌트 : 게시글 템플릿, 버튼
-- **기능**
-    - 유저 검색, 게시글 등록 및 수정, 게시글 상세 확인, 댓글 등록, 팔로워 게시글 불러오기, 좋아요 기능
-
-<br>
-
-### 👻김성철
-
-- **UI**
-    - 페이지 : 프로필 설정, 프로필 수정, 팔로잉&팔로워 리스트, 상품 등록, 상품 수정, 채팅 목록, 404 페이지
-    - 공통 컴포넌트 : 탭메뉴, InputBox, Alert 모달, 댓글
-- **기능**
-    - 프로필 설정 및 수정 페이지 유저 아이디 유효성 및 중복 검사, 상품 등록 및 수정
-
-<br>
-
-## 5. 📆 개발 기간 및 작업 관리
+## 4. 📆 개발 기간 및 작업 관리
 
 ### 개발 기간
 
@@ -179,7 +98,7 @@
 
 <br>
 
-### 작업 관리
+### 회의와 버전 및 형상 관리
 
 - **GitHub**를 활용하여 소스 코드의 버전 관리를 체계적으로 수행하였습니다.
 - **Google Drive**를 통해 개발 산출물(기획서, 설계서 등)에 대한 형상 관리도 병행하였습니다.
@@ -189,7 +108,7 @@
 
 <br>
 
-## 6. 🎯 개발 중점 사항
+## 5. 🎯 개발 중점 사항
 
 - 최대한 객체지향 특성이 잘 드러나도록 설계
 - DB 연동을 최우선 목표로 설정하여 교과목 간 연계 실현
@@ -197,29 +116,57 @@
 
 <br>
 
-## 7. ▶️ 기능 시연
+## 6. ▶️ 기능 시연
 
-### [초기화면]
+<table>
+  <tr>
+    <td align="center">
+      <img src="./assets/메인화면.png" width="300px"><br>
+      <sub>메인화면</sub>
+    </td>
+    <td align="center">
+      <img src="./assets/회원가입.png" width="300px"><br>
+      <sub>회원가입</sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="./assets/로그인.png" width="300px"><br>
+      <sub>로그인</sub>
+    </td>
+    <td align="center">
+      <img src="./assets/계좌 개설.png" width="300px"><br>
+      <sub>계좌 개설</sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="./assets/입금.png" width="300px"><br>
+      <sub>입금</sub>
+    </td>
+    <td align="center">
+      <img src="./assets/출금.png" width="300px"><br>
+      <sub>출금</sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="./assets/계좌 이체.png" width="300px"><br>
+      <sub>계좌 이체</sub>
+    </td>
+    <td align="center">
+      <img src="./assets/정보 조회.png" width="300px"><br>
+      <sub>정보 조회</sub>
+    </td>
+  </tr>
+</table>
 
-- 서비스 접속 초기화면으로 splash 화면이 잠시 나온 뒤 다음 페이지가 나타납니다.
-    - 로그인이 되어 있지 않은 경우 : SNS 로그인 페이지
-    - 로그인이 되어 있는 경우 : README 홈 화면
-- SNS(카카오톡, 구글, 페이스북) 로그인 기능은 구현되어 있지 않습니다.
 
-초기화면
 
----
 
 <br>
 
-### [회원가입]
-
-- 이메일 주소와 비밀번호를 입력하면 입력창에서 바로 유효성 검사가 진행되고 통과하지 못한 경우 각 경고 문구가 입력창 하단에 표시됩니다.
-- 이메일 주소의 형식이 유효하지 않거나 이미 가입된 이메일일 경우 또는 비밀번호가 6자 미만일 경우에는 각 입력창 하단에 경구 문구가 나타납니다.
-
-<br>
-
-## 8.  📌 추후 고려 사항
+## 7. 📌 추후 고려 사항
 
 - 추가 구현해보고 싶은 사항
     - 다양한 상품(정기 예금, 적금)등 추가
@@ -234,7 +181,7 @@
 
 <br>
 
-## 9. 🤔 프로젝트 회고
+## 8. 🤔 프로젝트 회고
 
 - OOP와 교과목간 연계
 
