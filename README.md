@@ -2,6 +2,7 @@
 
 ![상단 배너](./asset/thumbnail.png)
 
+
 <br>
 
 ## 🌟 프로젝트 소개
@@ -121,41 +122,41 @@
 <table>
   <tr>
     <td align="center">
-      <img src="./assets/메인화면.png" width="300px"><br>
+      <img src="./asset/메인화면.png" width="300px"><br>
       <sub>메인화면</sub>
     </td>
     <td align="center">
-      <img src="./assets/회원가입.png" width="300px"><br>
+      <img src="./asset/회원가입.png" width="300px"><br>
       <sub>회원가입</sub>
     </td>
   </tr>
   <tr>
     <td align="center">
-      <img src="./assets/로그인.png" width="300px"><br>
+      <img src="./asset/로그인.png" width="300px"><br>
       <sub>로그인</sub>
     </td>
     <td align="center">
-      <img src="./assets/계좌 개설.png" width="300px"><br>
+      <img src="./asset/계좌 개설.png" width="300px"><br>
       <sub>계좌 개설</sub>
     </td>
   </tr>
   <tr>
     <td align="center">
-      <img src="./assets/입금.png" width="300px"><br>
+      <img src="./asset/입금.png" width="300px"><br>
       <sub>입금</sub>
     </td>
     <td align="center">
-      <img src="./assets/출금.png" width="300px"><br>
+      <img src="./asset/출금.png" width="300px"><br>
       <sub>출금</sub>
     </td>
   </tr>
   <tr>
     <td align="center">
-      <img src="./assets/계좌 이체.png" width="300px"><br>
+      <img src="./asset/계좌 이체.png" width="300px"><br>
       <sub>계좌 이체</sub>
     </td>
     <td align="center">
-      <img src="./assets/정보 조회.png" width="300px"><br>
+      <img src="./asset/정보 조회.png" width="300px"><br>
       <sub>정보 조회</sub>
     </td>
   </tr>
