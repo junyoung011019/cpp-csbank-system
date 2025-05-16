@@ -15,14 +15,14 @@
 
 ## 목차
 
-1. [개발 환경](#1-🛠️-개발-환경)
-2. [사용 기술 스택](#2-🔌-사용-기술-스택)
-3. [프로젝트 구조](#3-🗂️-프로젝트-구조)
-4. [개발 기간 및 작업 관리](#4-📆-개발-기간-및-작업-관리)
-5. [개발 중점 사항](#5-🎯-개발-중점-사항)
-6. [기능 시연](#6-▶️-기능-시연)
-7. [추후 고려 사항](#7-📌-추후-고려-사항)
-8. [프로젝트 회고](#8-🤔-프로젝트-회고)
+1. [개발 환경](#1-개발-환경)
+2. [사용 기술 스택](#2-사용-기술-스택)
+3. [프로젝트 구조](#3-프로젝트-구조)
+4. [개발 기간 및 작업 관리](#4-개발-기간-및-작업-관리)
+5. [개발 중점 사항](#5-개발-중점-사항)
+6. [기능 시연](#6-기능-시연)
+7. [추후 고려 사항](#7-추후-고려-사항)
+8. [프로젝트 회고](#8-프로젝트-회고)
 
 <br>
 
@@ -122,41 +122,41 @@
 <table>
   <tr>
     <td align="center">
-      <img src="./asset/메인화면.png" width="300px"><br>
+      <img src="./asset/메인화면.png" width="400px"><br>
       <sub>메인화면</sub>
     </td>
     <td align="center">
-      <img src="./asset/회원가입.png" width="300px"><br>
+      <img src="./asset/회원가입.png" width="400px"><br>
       <sub>회원가입</sub>
     </td>
   </tr>
   <tr>
     <td align="center">
-      <img src="./asset/로그인.png" width="300px"><br>
+      <img src="./asset/로그인.png" width="400px"><br>
       <sub>로그인</sub>
     </td>
     <td align="center">
-      <img src="./asset/계좌 개설.png" width="300px"><br>
+      <img src="./asset/계좌 개설.png" width="400px"><br>
       <sub>계좌 개설</sub>
     </td>
   </tr>
   <tr>
     <td align="center">
-      <img src="./asset/입금.png" width="300px"><br>
+      <img src="./asset/입금.png" width="400px"><br>
       <sub>입금</sub>
     </td>
     <td align="center">
-      <img src="./asset/출금.png" width="300px"><br>
+      <img src="./asset/출금.png" width="400px"><br>
       <sub>출금</sub>
     </td>
   </tr>
   <tr>
     <td align="center">
-      <img src="./asset/계좌 이체.png" width="300px"><br>
+      <img src="./asset/계좌 이체.png" width="400px"><br>
       <sub>계좌 이체</sub>
     </td>
     <td align="center">
-      <img src="./asset/정보 조회.png" width="300px"><br>
+      <img src="./asset/정보 조회.png" width="400px"><br>
       <sub>정보 조회</sub>
     </td>
   </tr>
