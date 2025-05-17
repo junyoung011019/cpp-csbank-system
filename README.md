@@ -31,7 +31,7 @@
 - IDE: Visual Studio Community 2022
 - 개발 언어: C++
 - 데이터베이스: MySQL 8.0.34
-- 버전 관리: [GitHub - Cpp_project](https://github.com/junyoung011019/Cpp_project), GitHub Desktop
+- 버전 관리: [GitHub - CS 제일은행](https://github.com/junyoung011019/cpp-csbank-system), GitHub Desktop
 - 협업 도구: Discord
 - 최소 실행 환경:
     - CPU: Intel Pentium 4 1GHz 이상
