@@ -1,4 +1,4 @@
-# [🏦 CS 제일은행] C++ 기반 MySQL 연동 모의 은행 시스템
+# C++ 기반 MySQL 연동 모의 은행 시스템
 
 ![상단 배너](./asset/thumbnail.png)
 
